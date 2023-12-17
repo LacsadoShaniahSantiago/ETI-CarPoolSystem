@@ -1,5 +1,5 @@
 # ETI-CarPoolSystem
-Design consideration of your microservices
+## Design consideration of your microservices
 1. User Management:
 Separate Microservices: Create separate microservices for user account creation and management for passengers and car owners. This allows for independent scaling and deployment based on each user group's needs.
 API Gateway: Implement an API gateway for user management API calls to provide a unified point of entry and enhance security.
@@ -21,7 +21,7 @@ Separate Microservice: Consider a separate microservice for retrieving historica
 Data Retention: Implement data retention policies to comply with the 1-year audit requirement while reducing storage costs.
 Anonymization: Anonymize sensitive passenger and trip data after the retention period for privacy protection.
 
-Architecture diagram 
+## Architecture diagram 
 Components: 
 - API Gateway: Acts as the single entry point for all API calls, managing authentication, authorization, and routing to specific microservices.
 - User Management Microservice: Handles user account creation, management, and updates for both passengers and car owners.
@@ -41,7 +41,7 @@ Connections:
 - Passenger Matching and Seat Assignment are performed within the Trip Management Microservice.
 - Historical Trip Records Microservice interacts with the Historical Trip Records Database to manage past trip data.
 
-Instructions for setting up and running your microservices
+## Instructions for setting up and running your microservices
 1. Opening Connection
    - In each folder, open Integraded Terminal in Vistual Studio Code and run each golang files in separate integrated terminals.
    - For mod folder, make sure connection is established which is indicated by "Listening to <port>" in the integrated terminal.
